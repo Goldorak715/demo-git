@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Formulaires - Partie 2</title>
+  </head>
+
+  <body>
+    <div id="page">
+      <header>
+        <h1>Formulaire d'inscription</h1>
+      </header>
+      <nav></nav>
+      <main>
+        <form action="mailto:ppoulin@csfoy.ca" method="post">
+          <!-- Le fieldset permet de regrouper visuellement les informations à saisir-->
+          <fieldset class="informationComplete">
+            <fieldset class="coordonnees">
+              <div>
+                <label for="txtPrenom">Prénom :</label>
+                <input type="text" name="txtPrenom" id="txtPrenom" />
+              </div>
+              <div>
+                <label for="txtNom">Nom :</label>
+                <input type="text" name="txtNom" id="txtNom" />
+              </div>
+              <div>
+                <label for="txtTelephone">Téléphone</label>
+                <input type="text" name="txtTelephone" id="txtTelephone" />
+              </div>
+              <div>
+                <label for="codePostal">Code Postal</label>
+                <input type="text" name="codePostal" id="codePostal" />
+              </div>
+              <div>
+                <label class="label-top" for="listLoisirs"
+                  >Quels sont vos loisirs ?</label
+                >
+                <select name="listLoisirs" id="listLoisirs" size="5" multiple>
+                  <option value="Lecture">Lecture</option>
+                  <option value="Hockey">Hockey</option>
+                  <option value="Cuisine">Cuisine</option>
+                  <option value="Ski">Ski</option>
+                  <option value="Peinture">Peinture</option>
+                  <option value="Golf">Golf</option>
+                  <option value="Pêche">Pêche</option>
+                  <option value="Jogging">Jogging</option>
+                  <option value="Macramé">Macramé</option>
+                  <option value="Natation">Natation</option>
+                </select>
+              </div>
+            </fieldset>
+            <fieldset>
+              <div>
+                <p>De quelle catégorie d'age faites-vous partie?</p>
+                <div>
+                  <!-- Pour les boutons radio, c'est IMPORTANT que les name soient
+                                 les mêmes pour TOUS les boutons car on veut qu'un seul soit
+                                 sélectionnable à la fois-->
+                  <input type="radio" name="rbAge" id="rb18moins" checked />
+                  <label for="rb18moins">Moins de 18 ans</label>
+                </div>
+                <div>
+                  <input type="radio" name="rbAge" id="rb18a24" />
+                  <label for="rb18a24">Entre 18 et 24 ans</label>
+                </div>
+                <div>
+                  <input type="radio" name="rbAge" id="rb25a34" />
+                  <label for="rb25a34">Entre 25 et 34 ans</label>
+                </div>
+                <div>
+                  <input type="radio" name="rbAge" id="rb35a54" />
+                  <label for="rb35a54">Entre 35 et 54 ans</label>
+                </div>
+                <div>
+                  <input type="radio" name="rbAge" id="rb55plus" />
+                  <label for="rb55plus">55 ans et plus</label>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="chkCatalogue"
+                    id="chkCatalogue"
+                  />
+                  <label for="chkCatalogue">Recevoir notre catalogue</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="chkEnvoi" id="chkEnvoi" />
+                  <label for="chkEnvoi">S'abonner à notre liste d'envoi</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="chkDiffusion"
+                    id="chkDiffusion"
+                    checked
+                  />
+                  <label for="chkDiffusion"
+                    >Diffusion de vos coordonnées à nos commanditaires</label
+                  >
+                </div>
+              </div>
+            </fieldset>
+          </fieldset>
+          <div class="buttons-form">
+            <input type="submit" value="S'inscrire" />
+            <input type="reset" value="Réinitialiser" />
+          </div>
+        </form>
+      </main>
+      <footer>
+        <div class="infoBasDePage">
+          <div>William Blouin</div>
+          <div>Programmation web et jeux vidéos</div>
+          <div>18 septembre 2024</div>
+          <div class="copyright">Copyright 2021</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

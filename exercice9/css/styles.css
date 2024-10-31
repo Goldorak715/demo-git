@@ -1,0 +1,58 @@
+/* Pour centrer la page*/
+#page {
+  width: 700px;
+  margin: 0 auto;
+}
+
+main {
+  margin-top: 75px;
+}
+.informationComplete {
+  display: flex;
+  flex-direction: row;
+}
+.informationComplete {
+  border: 0;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-style: italic;
+  color: darkgreen;
+}
+
+.coordonnees label {
+  display: inline-block;
+  width: 150px;
+}
+
+/*Pour affecter un seul input*/
+input[type="text"] {
+  width: 250px;
+}
+
+fieldset,
+/*Pour séparer les radios et les checkbox*/
+fieldset>div {
+  margin-top: 10px;
+}
+
+.buttons-form {
+  text-align: center;
+}
+
+.buttons-form > input {
+  margin: 20px;
+}
+
+.infoBasDePage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+}
+.copyright {
+  grid-row: 2/3;
+  grid-column: 2/2;
+}
